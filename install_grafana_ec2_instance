@@ -8,6 +8,7 @@ create
 ###############
 go to IAM 
 create role access @ admin create
+##################################
 go to ec2 instances attached role 
 ############
 to connect ec2 console 
