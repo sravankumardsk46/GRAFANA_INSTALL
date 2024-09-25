@@ -1,1 +1,85 @@
+go to aws console
+create ec2 enstances 
+t2.micro
+vpc default
+key 
+sg port : 3000
+create 
+###############
+go to IAM 
+create role access @ admin create
+go to ec2 instances attached role 
+############
+to connect ec2 console 
+sudo su 
+---------------------------------------
+go to goole downlode grafana
+https://grafana.com/grafana/download
+---------------------------------------
+# amazon linux grafana Downlod
+sudo yum install -y https://dl.grafana.com/enterprise/release/grafana-enterprise-11.2.0-1.x86_64.rpm
+
+systemctl start grafana-server.service
+systemctl enable grafana-server.service
+systemctl status grafana-server.service
+netstat-tunpl | grep grafana
+listen 3000
+##############
+copy public ip past google:3ooo
+user admin
+poss admin
+dashbord grafana
+go to data scines
+cloudwatch
+connection   
+##################
+go to IAM 
+create user: sravan
+cli need
+access kye:
+secret key :
+###########
+go to dash bord
+access kye: past
+secret key :past
+default regin : ap-south-1
+save test
+data sources # just see only
+dash bord          # be side datascines
+import dash bord
+go to grafana blue click
+serch ec2
+amzone ec2 select
+id 1123 copy
+past import place
+cloudwatch select
+cloudwatch select
+dasbord see inbond outbond see
+last 15 minits select
+last 12 hours
+5s
+regin ap-south-1      period:60
+####################
+crete new dashbord
+goto import
+serch ec2
+aws billing
+id 617
+past 
+import
+select  clodwatch     ap-south-1    ec2 name grafana-server     id  instans           5s      last 15 minit
+######################
+... edit     what do u want   time seres    apply 
+##################
+save dashbord select select
+###############################################################################
+if u want anether instance trac create instance
+####
+go to grafana dash bord 
+select    cloudewatch   ap-south-1     tag  newinstance    id instances    5s   time 30 min
+ebs valume check
+#########################################  ok  
+
+
+
 
